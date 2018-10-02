@@ -21,6 +21,13 @@
 		
 		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+		
+		<script type="text/javascript">
+			function calcAge() {
+				var age = ((new Date()).getFullYear()) - 1994;
+				document.getElementById("age").innerHTML = age;
+			}
+		</script>
 	</head>
 	<body data-spy="scroll" data-target="#navbar-example" style="" class="fixed">	 
 		<div id="top" class="jumbotron" data-src="./images/background.jpg" data-position="bottom right" style="height: 763px;">
@@ -79,7 +86,7 @@
 							<strong>Name:</strong><br>
 							Omar Abdelhamid Khaled<br>
 							<strong>Age:</strong><br>
-							24 years<br>
+							<span id="age" onload="calcAge">24</span> years<br>
 							<strong>Location:</strong><br>
 							Rehab City, New Cairo, Cairo, Egypt
 						</p>
